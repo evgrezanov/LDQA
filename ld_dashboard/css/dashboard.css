@@ -1,0 +1,85 @@
+/*
+1. Tabs
+*/
+.ldinfo {
+		display:none;
+	}
+
+.ldinfo.active {
+		display:block;
+	}
+
+textarea#ld_about, textarea#ld_byline, textarea#post_content_case_id {
+    	width: 70%;
+    	height: 100px;
+	}
+
+
+/*
+2. Specializations
+*/
+#specialization
+		#info_form { /* вся форма */
+		  line-height: normal;
+		}
+		#specialization  label.chekbox { /* пункты и соединяющие их линии */
+		  position: relative;
+		  display: block;
+		  padding: 0 0 0 1.2em;
+		}
+		#specialization  label.chekbox:not(:nth-last-of-type(1)) {
+		  border-left: 1px solid #94a5bd;
+		}
+		#specialization  label.chekbox:before {
+		  content: "";
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 1.1em;
+		  height: .5em;
+		  border-bottom: 1px solid #94a5bd;
+		}
+		#specialization  label.chekbox:nth-last-of-type(1):before {
+		  border-left: 1px solid #94a5bd;
+		}
+		#specialization  fieldset,
+		#specialization  fieldset[class=""] .razvernut { /* списки */
+		  position: absolute;
+		  visibility: hidden;
+		  margin: 0;
+		  padding: 0 0 0 2em;
+		  border: none;
+		}
+		#specialization  fieldset:not(:last-child) {
+		  border-left: 1px solid #94a5bd;
+		}
+		#specialization .razvernut {
+		  position: relative;
+		  visibility: visible;
+		}
+		#specialization > fieldset > legend,
+		#specialization .razvernut  > fieldset > legend { /* плюс */
+		  position: absolute;
+		  left: -5px;
+		  top: 0;
+		  height: 7px;
+		  width: 7px;
+		  margin-top: -1em;
+		  padding: 0;
+		  border: 1px solid #94a5bd;
+		  border-radius: 2px;
+		  background-repeat: no-repeat;
+		  background-position: 50% 50%;
+		  background-color: #fff;
+		  background-image: linear-gradient(to left, #1b4964, #1b4964), linear-gradient(#1b4964, #1b4964), linear-gradient(315deg, #a0b6d8, #e8f3ff 60%, #fff 60%);
+		  background-size: 1px 5px, 5px 1px, 100% 100%;
+		  visibility: visible;
+		  cursor: pointer;
+		}
+		#specialization fieldset[class=""] .razvernut fieldset legend {
+		  visibility: hidden;
+		}
+		#specialization .razvernut > legend { /* минус */
+		  background-image: linear-gradient(#1b4964, #1b4964) !important;
+		  background-size: 5px 1px !important;
+		}
